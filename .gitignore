@@ -1,0 +1,51 @@
+# Secrets
+.env
+.env.*
+!.env.example
+!.env.local.example
+backend/.env
+frontend/.env.local
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+*.egg-info/
+
+# Database
+backend/aimo.db
+backend/aimo.db-*
+*.sqlite3
+
+# Node / Next.js
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/tsconfig.tsbuildinfo
+npm-debug.log*
+
+# OS / editor
+.DS_Store
+.vscode/*
+!.vscode/extensions.json
+.idea/
+
+# Playwright E2E output
+frontend/test-results/
+frontend/playwright-report/
+
+# start-up bootstrap lock (SQLite)
+backend/*.startup.lock
+
+# Valio Junction datasets (83 MB product file; provider data). Re-download with:
+#   cd backend && python -m scripts.download_data      (needs VALIO_API_KEY in backend/.env)
+data/valio_aimo_junction26_product_data.json
+data/valio_aimo_junction26_delivery_reliability.csv
+data/valio_aimo_junction26_carbon_footprint.csv
+
+# Database files
+backend/*.db
+backend/*.sqlite
+backend/*.sqlite3
