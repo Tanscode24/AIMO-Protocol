@@ -49,3 +49,4 @@ data/valio_aimo_junction26_carbon_footprint.csv
 backend/*.db
 backend/*.sqlite
 backend/*.sqlite3
+backend-local-backup/
